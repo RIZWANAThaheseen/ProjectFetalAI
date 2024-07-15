@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetal Health Prediction and Monitoring Result</title>
+    <meta name="description" content="Description of your page">
+    <meta name="keywords" content="keywords, related, to, your, content">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="../static/im/favicon.png">
+    <link rel="apple-touch-icon" href="../static/img/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="../static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/vendor/aos/aos.css">
+    <link rel="stylesheet" href="../static/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="../static/vendor/swiper/swiper-bundle.min.css">
+    
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body class="index-page">
+    
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-sm position-absolute d-flex align-items-center justify-content-between">
+        
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">FETAL HEALTH</h1><span>.</span>
+                <h2></h2>
+                
+            </a>
+            
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html#hero" class="active">HOME</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            
+            <a class="btn-getstarted" href="output.html">Predict</a>
+            
+        </div>
+    </header>
+    
+    <main class="main">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero dark-background">
+            
+            <p><span style="color: red;">Healthy beginnings start with fetal well-being. Every heartbeat echoes the promise of a brighter tomorrow.</span> </p>
+            <br>
+                      
+            <p><em style="color:blue"></style>Fetal health isn't just about a healthy baby; it's about creating a healthy foundation for a lifetime.</em></p>
+            <!-- Content goes here -->
+            
+        </section>
+
+        <style>
+        .hero--light-background {
+            background-color: #d19494;
+            color: #cf3838;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        </style>
+        <img src="{{ url_for('static', filename='img/fetal/image7.jpg') }}" alt="" data-aos="fade-right" width="900" height="1050">
+        
+            <div class="background-image" data-aos="fade-right">
+                <!-- Content goes here if needed -->
+            </div>
+        
+            <!--<img src="C:\Users\DELL\Downloads\Mini_Project\flask\flask\static\img\fetal\image6.jpg" alt="" data-aos="fade-up" >  -->       
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2 data-aos="fade-down" data-aos-delay="800">The predicted Fetal Health is: Normal </h2>
+                        <h1 data-aos="fade-up" id="output"> {{ prediction_text}} </h1>
+                        <!--<p data-aos="fade-up" data-aos-delay="900"> {{output}}</p>-->
+                        <h3></h3>
+                        <!-- Remove stray <form> tag or complete it if necessary -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Hero Section -->
+        
+        <!-- Clients Section -->
+        <section id="clients" class="clients section">
+            <!-- Add content for clients section if needed -->
+        </section><!-- /Clients Section -->
+        
+        <!-- Add more sections as needed -->
+        
+    </main>
+    
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    
+    <!-- Vendor JS Files -->
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/vendor/php-email-form/validate.js"></script>
+    <script src="../static/vendor/aos/aos.js"></script>
+    <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../static/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Main JS File -->
+    <script src="../static/js/main.js"></script>
+    
+</body>
+</html>
+
+
+
